@@ -10,13 +10,14 @@ import OpenSSL
 
 app = Flask(__name__)
 
+# Fake
 conn = pymysql.connect(
     host='localhost',
     user='root',
-    password='mysql1234!@',
-    db='flask_post_db',
+    password='',
+    db='',
     charset='utf8',
-    port=2003
+    port=5088
 )
 
 curs = conn.cursor()
