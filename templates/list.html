@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>플라스크 게시판 | 글목록</title>
+    <style>
+        table {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #bbdefb;
+        }
+
+        td {
+            background-color: #e3f2fd;
+        }
+    </style>
+</head>
+<body>
+<table class="table">
+        <tr>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>내용</th>
+        </tr>
+        {% for obj in data_list%}
+        <tbody>
+            <tr>
+                <td>{{obj.title}}</td>
+                <td>{{obj.author}}</td>
+                <td>{{obj.content}}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>플라스크 게시판 | 메인 페이지</title>
+    </head>
+    <body>
+    <div align="center">
+        <form method="POST">
+        <p class="title">
+            <label for="title">제목: </label>
+            <input type="text" id="title" name="title" placeholder="제목을 적어주세요">
+        </p>
+        <p class="author">
+            <label for="author">작성자: </label>
+            <input type="text" id="author" name="author" placeholder="작성자 이름을 적어주세요">
+        </p>
+        <p class="content">
+            <label for="content">내용: </label>
+            <input type="text" id="content" name="content" placeholder="내용을 적어주세요">
+        </p>
+            <input type="submit" name="업로드" value="업로드" style="WIDTH: 183pt" onclick="location.href='list'"/>
+    </form>
+    <p>
+        <input type=button style="WIDTH: 183pt; background-color:transparent;  border:0 transparent solid;"
+               value="글 목록" name="글 목록" onclick="location.href='list'">
+    </p>
+    </div>
+    </body>
+</html>
